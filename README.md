@@ -13,8 +13,8 @@
     В консоль: ```pip install -r requirements.txt```
 
 <b>4. Вставьте свои значения в config.py:</b><br>
-    Перейдите в [BotFather](https://t.me/BotFather) в Telegram и создайте нового бота, после чего он выдаст вам токен.<br>
-    Внутырь переменной ADMINS вставьте telegram id админов через запятую
+    Перейдите в [BotFather](https://t.me/BotFather) в Telegram и создайте нового бота, после чего он выдаст вам токен, который нужно вставить в перемунную TOKEN_BOT = "токен".<br>
+    Внутрь переменной ADMINS вставьте telegram id админов через запятую
 
 <b>5. Запуск бота:</b><br>
     В консоль: ```python main.py``` или ```python3 main.py```
