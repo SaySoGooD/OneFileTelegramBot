@@ -1,20 +1,46 @@
-<strong>Инструкция по запуску на Windows:</strong>
+# OneFileTelegramBot
 
-<b>1. Установите [Python 3.12](https://www.python.org/downloads/release/python-3127/).</b><br>
-    Не забудьте поставить галочку Add to Path.</b><br>
-    Проверить версию можно в консоли: ```python --version``` или ```python3 --version```
+A lightweight single-file Telegram bot that sends a file to all users.
+Admins can update the file and broadcast messages directly via the admin panel.
 
-<b>2. Создайте и активируйте виртуальное окружение.</b><br>
-    Для начала перейдите в корневую директорию, например: ```cd C:\Users\user\Desktop\TgBot```<br>
-    Чтоб создать, напишите в консоль: ```python -m venv venv```<br>
-    Чтоб активировать: ```.\venv\Scripts\activate```
+## Features
 
-<b>3. Установите зависимости.</b><br>
-    В консоль: ```pip install -r requirements.txt```
+- Broadcast a file to all registered users
+- Update the file and messages without restarting
+- Built-in admin panel for management
+- Simple middleware and FSM state handling
 
-<b>4. Вставьте свои значения в config.py:</b><br>
-    Перейдите в [BotFather](https://t.me/BotFather) в Telegram и создайте нового бота, после чего он выдаст вам токен, который нужно вставить в перемунную TOKEN_BOT = "токен".<br>
-    Внутрь переменной ADMINS вставьте telegram id админов через запятую
+## Requirements
 
-<b>5. Запуск бота:</b><br>
-    В консоль: ```python main.py``` или ```python3 main.py```
+- Python 3.12+
+
+## Quick Start
+
+**1. Clone the repository**
+
+git clone https://github.com/SaySoGooD/OneFileTelegramBot.git
+cd OneFileTelegramBot
+
+**2. Create and activate a virtual environment**
+
+python -m venv venv
+.\venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/macOS
+
+**3. Install dependencies**
+
+pip install -r requirements.txt
+
+**4. Configure**
+
+Open config.py and set your values:
+- TOKEN_BOT — your bot token from @BotFather
+- ADMINS — list of admin Telegram IDs
+
+**5. Run**
+
+python main.py
+
+## License
+
+MIT
